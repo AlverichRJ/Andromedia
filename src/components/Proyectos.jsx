@@ -38,7 +38,7 @@ const Proyectos = () => {
 
        </motion.h2>
        <motion.div
-        className="lg:flex  lg:mt-40 lg:ml-[300px]  xl:flex  xl:mt-[300px] xl:ml-[400px] xl:h-40  "
+        className=" md:-ml-14 md:mr-20  lg:flex  lg:mt-40 lg:ml-[300px]  xl:flex  xl:mt-[300px] xl:ml-[400px] xl:h-40  "
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
