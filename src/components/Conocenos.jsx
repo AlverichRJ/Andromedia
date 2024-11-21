@@ -5,7 +5,7 @@ const Conocenos = () => {
   return (
     <div className=' h-screen w-full  container mx-auto  py-16 tracking-tighter ' id='conocenos'>
         <motion.h2
-        className="//telefonos//  sm:ml-32 sm:-mt-16 sm:text-[40px]   //Pantallas//  lg: lg:text-[35px] lg:ml-[655px] lg:-mt-3 lg:bg-transparent  //Pantallas Wide//  xl:text-[50px] xl:ml-[1020px] xl:-mt-3 xl:bg-transparent "
+        className="//telefonos//  sm:ml-32 sm:-mt-16 sm:text-[40px]     //telefonos// md:ml-20     //Pantallas//  lg: lg:text-[35px] lg:ml-[655px] lg:-mt-3 lg:bg-transparent  //Pantallas Wide//  xl:text-[50px] xl:ml-[1020px] xl:-mt-3 xl:bg-transparent "
         intial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
