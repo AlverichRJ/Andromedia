@@ -62,19 +62,19 @@ const Navbar = () => {
 
   return (
     <div  >
-      <nav className="fixed left-0 right-32 top-3 z-50 w-full  ">
+      <nav className=" fixed left-0 right-32 top-3 z-50 w-full  ">
         {/* Desktop Menu */}
         <div className={header ? "mx-auto max-w-4xl   backdrop-blur-[10px] " : "mx-auto max-w-4xl"}
         
         >
-          <div className="flex ">
+          <div className="lg:flex sm:hidden ">
             <div >
               <a href="#">
-                <img src={logo} width={150} alt="Logo" className="mt-6 ml-40 " />
+                <img src={logo} width={150} alt="Logo" className="  mt-6 ml-40 " />
               </a>
             </div>
             <div>
-              <ul className="flex items-center -space-x-12 mt-8 si">
+              <ul className=" flex items-center -space-x-12 mt-8 si ">
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index}>
                     <a
@@ -97,7 +97,7 @@ const Navbar = () => {
         
 
         {/* Mobile Menu */}
-        <div className="rounded-lg backdrop-blur-md lg:hidden ml-9 -mr-28">
+        <div className="sm:rounded-sm sm:backdrop-blur-md lg:hidden sm:ml-3 ">
           <div className="flex items-center justify-between">
             <div>
               <a href="#">

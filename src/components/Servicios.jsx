@@ -68,7 +68,7 @@ const Servicios = () => {
 
       
       <motion.div
-        className="lg:flex lg:flex-col lg:mx-52 lg:rounded-xl lg:bg-gradient-to-b from-zinc-900 to-zinc-850 lg:px-4 lg:py-5 lg:mt-[10px]         xl:flex xl:flex-col xl:mx- xl:rounded-xl xl:bg-gradient-to-b from-zinc-900 to-zinc-950 xl:px-4 xl:py-10 xl:mt-[100px]"
+        className="  sm:flex-row sm:mx-22 sm:rounded-lg sm:bg-gradient-to-b from-zinc-900 to-zinc-850 sm:px-4 sm:py-5 sm:mt-[10px]                   lg:flex lg:flex-col lg:mx-52 lg:rounded-xl lg:bg-gradient-to-b from-zinc-900 to-zinc-850 lg:px-4 lg:py-5 lg:mt-[10px]         xl:flex xl:flex-col xl:mx- xl:rounded-xl xl:bg-gradient-to-b from-zinc-900 to-zinc-950 xl:px-4 xl:py-10 xl:mt-[100px]"
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
@@ -143,20 +143,20 @@ const Servicios = () => {
         variants={containerVariants}
         viewport={{ once: true }}
       >
-        <motion.div className="relative w-32 p-1 sm:w-1/2" variants={itemVariants}>
+        <motion.div className="  relative w-32 p-1 sm:w-1/2" variants={itemVariants}>
           <video className="w-[550px] rounded-lg xl:size-[] " autoPlay muted loop playsInline>
             <source src={video} type="video/mp4" />
           </video>
         </motion.div>
         <motion.div
-          className="w-full p-4 text-center sm:w-1/2"
+          className=" w-full p-4 text-center sm:w-1/2"
           variants={itemVariants}
         >
-          <h2 className="mb-4 text-3xl">{ACHIEVEMENT.title}</h2>
-          <span className="mt-4 border-b border-yellow-400 py-2 text-xl font-semibold uppercase text-yellow-400">
+          <h2 className=" lg:mb-4 lg:text-3xl xl:mb-4 xl:text-3xl">{ACHIEVEMENT.title}</h2>
+          <span className="sm:mt-4 sm:border-b sm:border-yellow-400 sm:py-1 sm:text-xl sm:font-semibold sm:uppercase sm:text-yellow-400        xl:mt-4 xl:border-b xl:border-yellow-400 xl:py-2 xl:text-xl xl:font-semibold xl:uppercase xl:text-yellow-400">
             {ACHIEVEMENT.award}
           </span>
-          <p className="m-4 p-2 italic">{ACHIEVEMENT.description}</p>
+          <p className="xl:m-4 xl:p-2 xl:italic">{ACHIEVEMENT.description}</p>
         </motion.div>
       </motion.div>
 
