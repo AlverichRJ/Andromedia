@@ -140,7 +140,7 @@ const Contacto = () => {
             placeholder="Mensaje"
             value={formData.message}
             onChange={handleChange}
-            className="mb-8 w-full appearance-none rounded-lg border-2 border-white bg-transparent px-3 py-2 focus:border-gray-400 focus:outline-none"
+            className="mb-3 w-full appearance-none rounded-lg border-2 border-white bg-transparent px-3 py-2 focus:border-gray-400 focus:outline-none"
             rows="4"
           />
           {errors.message && (
@@ -156,7 +156,7 @@ const Contacto = () => {
         </div>
         <button
           type="submit"
-          className={`mb-8 w-full rounded bg-[#cf86fa] px-4 py-2 text-sm font-semibold text-slate-950 hover:bg-[#7c23a6] ${
+          className={`mb-8 w-full rounded bg-[#cf86fa] px-4 py-1 text-sm font-semibold text-slate-950 hover:bg-[#7c23a6] ${
             isSending ? "cursor-not-allowed opacity-50" : ""
           }`}
           disabled={isSending}
@@ -182,7 +182,7 @@ const Contacto = () => {
           <div  />
         </motion.figure>
       </div>
-      <div className=" flex justify-center gap-5 lg:mt-56 xl:mt-80  ">
+      <div className="sm:-mt-3 flex justify-center gap-5 lg:mt-56 xl:mt-80  ">
         {SOCIAL_MEDIA_LINKS.map((link, index) => (
           <motion.a
             key={index}
