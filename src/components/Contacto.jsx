@@ -74,7 +74,7 @@ const Contacto = () => {
 
   return (
 
-    <div className=" h-[90vh] lg:mx-auto max-w-3xl p-4    xl:h-[900px]  " id="contact">
+    <div className=" h-[90vh]  lg:mx-auto max-w-3xl p-4    xl:h-[900px]  " id="contact">
 
 
 
@@ -156,7 +156,7 @@ const Contacto = () => {
         </div>
         <button
           type="submit"
-          className={`mb-8 w-full rounded bg-[#cf86fa] px-4 py-1 text-sm font-semibold text-slate-950 hover:bg-[#7c23a6] ${
+          className={`sm:mb-8  w-full rounded bg-[#cf86fa] px-4 py-1 text-sm font-semibold text-slate-950 hover:bg-[#7c23a6] ${
             isSending ? "cursor-not-allowed opacity-50" : ""
           }`}
           disabled={isSending}
@@ -182,7 +182,7 @@ const Contacto = () => {
           <div  />
         </motion.figure>
       </div>
-      <div className="sm:-mt-3 flex justify-center gap-5 lg:mt-56 xl:mt-80  ">
+      <div className="sm:-mt-3 flex justify-center gap-5 lg:mt-56 xl:mt-80 uw:mt-80 ">
         {SOCIAL_MEDIA_LINKS.map((link, index) => (
           <motion.a
             key={index}

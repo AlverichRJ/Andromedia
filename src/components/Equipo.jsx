@@ -47,7 +47,7 @@ const Equipo = () => {
           <img
             src={testimonial.image}
             alt={testimonial.name}
-            className="sm:hidden sm:mb-8 sm:mr-6 sm:h-10 sm:w-16 sm:rounded-full   lg:mb-8 lg:mr-6 lg:h-16 lg:w-16 lg:rounded-full     xl:mb-8 xl:mr-6 xl:h-16 xl:w-16 xl:rounded-full md:mb-0 "
+            className="sm:hidden md:block lg:block xl:block uw:block sm:mb-8 sm:mr-6 sm:h-10 sm:w-16 sm:rounded-full   lg:mb-8 lg:mr-6 lg:h-16 lg:w-16 lg:rounded-full     xl:mb-8 xl:mr-6 xl:h-16 xl:w-16 xl:rounded-full md:mb-0 "
           />
           <div >
             <p className="  sm:mb-4 sm:italic sm:text-black  md:mb-4 md:italic md:text-black lg:mb-4  lg:text-black   xl:mb-4 xl:italic xl:text-black">"{testimonial.quote}"</p>
