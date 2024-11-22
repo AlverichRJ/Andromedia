@@ -47,12 +47,12 @@ const Equipo = () => {
           <img
             src={testimonial.image}
             alt={testimonial.name}
-            className="hidden xl:block xl:mb-8 xl:mr-6 xl:h-16 xl:w-16 xl:rounded-full md:mb-0 "
+            className="hidden lg:block xl:block    lg:mb-8 lg:mr-6 lg:h-16 lg:w-16 lg:rounded-full         xl:mb-8 xl:mr-6 xl:h-16 xl:w-16 xl:rounded-full md:mb-0 "
           />
           <div >
-            <p className="hidden xl:block md:mb-4 sm:italic md:text-black lg:mb-4 md:italic lg:text-black   xl:mb-4 xl:italic xl:text-black">"{testimonial.quote}"</p>
-            <p className="hidden xl:block  font-bold text-black" >{testimonial.name}</p>
-            <p className="hidden xl:block text-[#a3447c] font-bold">{testimonial.title}</p>
+            <p className="hidden lg:block xl:block md:mb-4 sm:italic md:text-black lg:mb-4 md:italic lg:text-black   xl:mb-4 xl:italic xl:text-black">"{testimonial.quote}"</p>
+            <p className="hidden lg:block xl:block  font-bold text-black" >{testimonial.name}</p>
+            <p className="hidden  lg:block xl:block text-[#a3447c] font-bold">{testimonial.title}</p>
           </div>
         </motion.div>
       ))}

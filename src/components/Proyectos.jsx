@@ -27,7 +27,7 @@ const Proyectos = () => {
   return (
     <div id="proyectos" className=" h-screen ">
         <motion.h2
-        className=" mt-48 text-center text-4xl font-semibold   "
+        className="  text-center text-4xl font-semibold   "
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}
