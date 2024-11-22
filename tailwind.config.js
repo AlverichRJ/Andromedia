@@ -18,6 +18,7 @@ export default {
         'md' :'500px',
         'lg' :'900px',
         'xl': '2269px',
+        'uw':'3000px',
      }
     },
   },
