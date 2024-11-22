@@ -25,9 +25,9 @@ const itemVariants={
 
 const Proyectos = () => {
   return (
-    <div id="proyectos" className=" h-screen ">
+    <div id="proyectos" className=" sm:h-[750px] xl:h-screen lg:h-screen ">
         <motion.h2
-        className="  text-center text-4xl font-semibold   "
+        className=" sm:-mt-10 text-center text-4xl font-semibold   "
         initial="hidden"
         whileInView="visible"
         variants={containerVariants}

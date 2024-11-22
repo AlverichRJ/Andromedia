@@ -60,8 +60,8 @@ const itemVariants2 = {
 const Servicios = () => {
   
   return (
-    <div className=" h-screen container mx-auto mt-72 py-16 tracking-tighter" id="servicios">
-      <h2 className="sm:mb-1 sm:-mt-[100px]         mb-1 mb:-mt-[50px] text-center text-4xl font-semibold">SERVICIOS</h2>
+    <div className=" h-screen container mx-auto sm:mt-36 xl:mt-72 xl:py-16 xl:tracking-tighter" id="servicios">
+      <h2 className="sm:mb-1 sm:-mt-[120px]         mb-1 mb:-mt-[50px] text-center text-4xl font-semibold xl:-mt-12">SERVICIOS</h2>
 
 
      
