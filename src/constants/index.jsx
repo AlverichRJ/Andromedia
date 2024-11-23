@@ -19,6 +19,7 @@ import { FaSquareFacebook } from "react-icons/fa6";
 import { FaInternetExplorer } from "react-icons/fa";
 import { MdOndemandVideo } from "react-icons/md";
 import { SiGradleplaypublisher } from "react-icons/si";
+import { GoChevronDown } from "react-icons/go";
 
 import image1 from "../assets/project1.jpg";
 import image2 from "../assets/project2.jpg";
@@ -74,6 +75,7 @@ export const PROJECTS = [
 
 export const SKILLS = [
   {
+    iconf: <GoChevronDown  className="text-4xl lg:text-2xl" />,
     icon: <FaSquareFacebook  className="text-4xl lg:text-6xl " />,
     name: " Análisis y Planificación",
     experience: <p>Comprender las necesidades y objetivos de cada cliente  <br />  <br /> 
@@ -93,6 +95,7 @@ export const SKILLS = [
     </p> ,
   },
   {
+    iconf: <GoChevronDown  className="text-4xl lg:text-2xl" />,
     icon: <CiVideoOn className="text-4xl lg:text-6xl text-white" />,
     name: "Servicios de Redes Sociales",
     experience: <p>Gestión de Redes Sociales <br />  <br /> 
@@ -124,6 +127,7 @@ export const SKILLS = [
     </p>,
   },
   {
+    iconf: <GoChevronDown  className="text-4xl lg:text-2xl" />,
     icon: <SiGradleplaypublisher className="text-4xl lg:text-6xl " />,
     name: "Servicios de Creatividad Publicitaria y Branding",
     experience: <p>Creatividad Publicitaria <br />  <br /> 
@@ -151,6 +155,7 @@ export const SKILLS = [
   </p>,
   },
   {
+    iconf: <GoChevronDown  className="text-4xl lg:text-2xl" />,
     icon: <FaInternetExplorer  className="text-4xl lg:text-6xl " />,
     name: "Servicios de Diseño Web y Marketing Digital",
     experience:<p>Diseño de Páginas Web <br />  <br /> 
@@ -185,6 +190,7 @@ export const SKILLS = [
   </p> ,
   },
   {
+    iconf: <GoChevronDown  className="text-4xl lg:text-2xl" />,
     icon: <MdOndemandVideo className="text-4xl lg:text-6xl " />,
     name: "Servicios de Video Marketing y Eventos",
     experience: <p>Video Marketing <br />  <br /> 
@@ -201,9 +207,7 @@ export const SKILLS = [
 
     </p> ,
   },
-
  
-
 ];
 
 export const ACHIEVEMENT = {

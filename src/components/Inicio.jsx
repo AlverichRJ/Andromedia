@@ -1,5 +1,6 @@
 import React from 'react'
 import profilePic from "../assets/robertButcher1.jpg";
+import profilePic2 from "../assets/robertButcher2.jpg";
 import { PROFILE } from "../constants";
 import { motion } from "framer-motion";
 
@@ -8,14 +9,23 @@ export const Inicio = () => {
     <>
     <div
 
-    className='h-screen relative flex min-h-screen items-end justify-center ms:min-w-2xl '
+    className='  h-screen relative flex min-h-screen items-end justify-center ms:min-w-2xl '
     id='inicio'
     >
 
         <motion.img
             src={profilePic}
             alt={Profiler.name}
-            className="absolute inset-0 z-10 h-full w-full object-cover"
+            className="xl:absolute xl:inset-0 xl:z-10 xl:h-full xl:w-full xl:object-cover sm:hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity:1 }}
+            transition={{ duration: 1 }}    
+        />
+
+             <motion.img
+            src={profilePic2}
+            alt={Profiler.name}
+            className="sm:absolute sm:inset-0 sm:z-10 sm:h-full sm:w-full sm:object-cover "
             initial={{ opacity: 0 }}
             animate={{ opacity:1 }}
             transition={{ duration: 1 }}    

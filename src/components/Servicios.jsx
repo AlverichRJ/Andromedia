@@ -97,15 +97,27 @@ const Servicios = () => {
           
             <Popover>
           <PopoverButton className="block text-sm/6 font-semibold text-white/50 focus:outline-none data-[active]:text-white data-[hover]:text-white data-[focus]:outline-1 data-[focus]:outline-white">
-          ▼
+          {skill.iconf}
           </PopoverButton>
           <PopoverPanel
             transition
             anchor="bottom"
-            className="divide-y block divide-white/5 rounded-xl bg-white/25 text-sm/9 transition duration-300 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
+            className="  xl:divide-y xl:block xl:divide-white/5 xl:rounded-xl xl:bg-white/55 xl:text-sm/9 xl:transition duration-300 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0
+                         lg:divide-y lg:block lg:divide-white/5 lg:rounded-xl lg:bg-white/55 lg:text-sm/9 lg:transition duration-300 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0
+                         md:divide-y md:block md:divide-white/5 md:rounded-xl md:bg-white/55 md:text-sm/9 md:transition duration-300 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0
+                         sm:-ml-[18px] sm:rounded-xl  bg-slate-950 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]
+            
+            "
           >
-            <div className="box-border m-auto h-[400px] w-[300px] p-4 
-                 m4  ">
+            <div className="xl:box-border xl:m-auto xl:h-[400px] xl:w-[300px] xl:p-4 xl:m4 
+                            lg:box-border lg:m-auto lg:h-[400px] lg:w-[300px] lg:p-4 lg:m4
+                            md:box-border md:m-auto md:h-[400px] md:w-[300px] md:p-4 md:m4
+                            sm:box-border sm:m-auto sm:h-[270px] sm:w-[300px] sm:p-4 sm:m4 sm:ml-5 sm:mr-5 sm:mt-5 sm:mb-5   
+
+            
+            
+            
+            ">
               
                 <p className="  font-semibold text-blue">{skill.experience1}</p>
                
