@@ -1,5 +1,6 @@
 import { ABOUT } from "../constants";
 import { motion } from "framer-motion";
+import logo from "../assets/logo.png";
 
 const Conocenos = () => {
   return (
@@ -37,6 +38,19 @@ const Conocenos = () => {
       </p>
        
     </motion.p>
+
+
+    <div>
+
+      
+    <a className="md:hidden lg:hidden xl:hidden uw:hidden" >
+                <img src={logo} width={90} alt="Logo" className="  position: absolute  sm:-mt-[708px] sm:ml-[80px] sm:scale-150  " />
+
+              </a>
+
+             
+
+    </div>
     </div>
   )
 }

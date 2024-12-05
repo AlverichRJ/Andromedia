@@ -5,6 +5,9 @@ import { NAVIGATION_LINKS } from "../constants";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
+//variables paa ocultar el menu
+
+
 //Se creo las constante header y setheader para hacer el efecto de scroll
   const [header,setHeader] = useState(false);
 
@@ -31,6 +34,8 @@ const Navbar = () => {
 
 
       }
+
+  
 
 
     },[])
@@ -59,10 +64,16 @@ const Navbar = () => {
   };
 
  
+  
+
+
+
+
+  
 
   return (
-    <div  >
-      <nav className=" fixed left-0 right-32 top-3 z-50 w-full  ">
+    <div   >
+      <nav className=" fixed left-0 right-32 top-3 z-50 w-full sm:block   ">
         {/* Desktop Menu */}
         <div className={header ? "mx-auto max-w-4xl   backdrop-blur-[10px] " : "mx-auto max-w-4xl"}
         
@@ -70,11 +81,11 @@ const Navbar = () => {
           <div className="lg:flex sm:hidden ">
             <div >
               <a href="#">
-                <img src={logo} width={150} alt="Logo" className="  mt-6 ml-40 " />
+                <img src={logo} width={150} alt="Logo" className="   mt-6 ml-40 " />
               </a>
             </div>
             <div>
-              <ul className=" flex items-center -space-x-12 mt-8 si ">
+              <ul className=" flex items-center -space-x-12 mt-8 si  ">
                 {NAVIGATION_LINKS.map((item, index) => (
                   <li key={index}>
                     <a
@@ -97,48 +108,25 @@ const Navbar = () => {
         
 
         {/* Mobile Menu */}
-        <div className="sm:rounded-sm sm:backdrop-blur-md lg:hidden sm:ml-3 ">
-          <div className="flex items-center justify-between">
-            <div>
-              <a href="#">
-                <img src={logo} width={90} alt="Logo" className="m-2" />
+        <div id="navbar" className="  sm:rounded-sm sm:bg-transparent lg:hidden sm:ml-3 "> 
 
-              </a>
-            </div>
-            <div className="flex items-center">
-              <button
-                className="focus:outline-none lg:hidden"
-                onClick={toggleMobileMenu}
-              >
-                {isMobileMenuOpen ? (
-                  <FaTimes className="m-2 h-6 w-5" />
-                ) : (
-                  <FaBars className="m-2 h-6 w-5" />
-                )}
-              </button>
-            </div>
-          </div>
-          {isMobileMenuOpen && (
-            <ul className="ml-4 mt-4 flex flex-col gap-4 backdrop-blur-md ">
-              {NAVIGATION_LINKS.map((item, index) => (
-                <li key={index}>
-                  <a
-                    className="block w-full text-xl font-semibold "
-                    href={item.href}
-                    onClick={(e) => handleLinkClick(e, item.href)}
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          )}
+                  
+
+
+
+
+
         </div>
+
+       
+
+          
       </nav>
 
+
+  
     
     </div>
-
 
 
   );
